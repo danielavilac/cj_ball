@@ -9,6 +9,7 @@ public class ScoreController : MonoBehaviour
 
     void Awake ()
     {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         score = GameObject.Find("Score").GetComponent<Text>();
     }
 
